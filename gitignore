@@ -1,0 +1,17 @@
+# Informes exportados
+/reportes/*
+!/reportes/.gitkeep
+
+# Variables de entorno
+.env
+.env.local
+
+# Archivos temporales del sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Dependencias (si en el futuro se usa Composer)
+/vendor/
+composer.lock
