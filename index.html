@@ -3,87 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Análisis — Samsung Galaxy S23</title>
+<title>Analizador de Celular — Visor de informe</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="hoja">
     <header class="cabecera">
-      <p class="dispositivo">Samsung Galaxy S23</p>
-      <p class="meta">Origen: <strong>ADB (datos reales del dispositivo)</strong> &nbsp;·&nbsp; Fecha de análisis: 2026-09-22 10:15:00</p>
+      <p class="dispositivo" id="dispositivo">Ningún análisis cargado</p>
+      <p class="meta" id="meta">
+        Coloca el archivo <strong>analisis_celular.json</strong> (exportado por el script) junto a esta página,
+        o selecciónalo manualmente:
+      </p>
+      <label class="cargar" for="archivo-json">Seleccionar archivo JSON</label>
+      <input type="file" id="archivo-json" accept="application/json,.json" hidden>
     </header>
 
-    <section class="modulo">
-      <h2>Información general</h2>
-      <div class="tabla-kv">
-        <div class="fila"><span class="clave">Marca</span><span class="valor">Samsung</span></div>
-        <div class="fila"><span class="clave">Modelo</span><span class="valor">Galaxy S23</span></div>
-        <div class="fila"><span class="clave">Versión de android</span><span class="valor">14</span></div>
-        <div class="fila"><span class="clave">Api level</span><span class="valor">34</span></div>
-        <div class="fila"><span class="clave">Procesador / soc</span><span class="valor">qcom</span></div>
-        <div class="fila"><span class="clave">Número de serie</span><span class="valor">R5CX90ABCDE</span></div>
-      </div>
-    </section>
-
-    <section class="modulo">
-      <h2>Pantalla</h2>
-      <div class="tabla-kv">
-        <div class="fila"><span class="clave">Resolucion</span><span class="valor">1080 x 2340</span></div>
-        <div class="fila"><span class="clave">Densidad</span><span class="valor">425 dpi</span></div>
-        <div class="fila"><span class="clave">Tamano</span><span class="valor">6.1 pulgadas</span></div>
-        <div class="fila"><span class="clave">Tecnologia</span><span class="valor">Dynamic AMOLED 2X</span></div>
-      </div>
-    </section>
-
-    <section class="modulo">
-      <h2>Sensores</h2>
-      <div class="chips">
-        <span class="chip">Giroscopio</span>
-        <span class="chip">Acelerómetro</span>
-        <span class="chip">Magnetómetro / Brújula</span>
-        <span class="chip">Sensor de proximidad</span>
-        <span class="chip">Sensor de luz ambiental</span>
-        <span class="chip">Barómetro</span>
-        <span class="chip">Sensor de huella (bajo pantalla)</span>
-      </div>
-    </section>
-
-    <section class="modulo">
-      <h2>Conectividad</h2>
-      <div class="chips">
-        <span class="chip">NFC</span>
-        <span class="chip">Bluetooth 5.3</span>
-        <span class="chip">Wi-Fi 6E</span>
-        <span class="chip">5G</span>
-        <span class="chip">GPS</span>
-      </div>
-    </section>
-
-    <section class="modulo">
-      <h2>Cámara</h2>
-      <div class="chips">
-        <span class="chip">Principal 50MP</span>
-        <span class="chip">Ultra gran angular 12MP</span>
-        <span class="chip">Teleobjetivo 10MP</span>
-        <span class="chip">Frontal 12MP</span>
-      </div>
-    </section>
-
-    <section class="modulo">
-      <h2>Seguridad y biometría</h2>
-      <div class="chips">
-        <span class="chip">Sensor de huella (bajo pantalla)</span>
-      </div>
-    </section>
-
-    <section class="modulo">
-      <h2>Batería</h2>
-      <div class="tabla-kv">
-        <div class="fila"><span class="clave">Capacidad</span><span class="valor">3900 mAh</span></div>
-        <div class="fila"><span class="clave">Carga rapida</span><span class="valor">25W</span></div>
-      </div>
-    </section>
+    <div id="contenedor-secciones"></div>
   </div>
-  <footer>Generado por Analizador de Características de Celular (WSL)</footer>
+  <footer>Visor del Analizador de Características de Celular (WSL)</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

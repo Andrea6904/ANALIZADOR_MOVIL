@@ -72,6 +72,22 @@ header.cabecera::after  { bottom: -1px; right: -1px; border-left: none; border-t
   font-weight: 500;
 }
 
+.cargar {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 9px 16px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.82rem;
+  cursor: pointer;
+  background: rgba(124, 231, 208, 0.06);
+}
+
+.cargar:hover {
+  background: rgba(124, 231, 208, 0.14);
+}
+
 .modulo {
   position: relative;
   border: 1px solid var(--line);
